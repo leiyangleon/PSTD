@@ -14,6 +14,18 @@ Citation: https://github.com/leiyangleon/PSTD
 ### Memory Efficient and Accurate Compared to FDTD: 
 grid sampling resolution approaching the limit of wavelength/2
 
+### Standard FDTD/PSTD components included, e.g.
+* Total Field/Scattered Field Formulation
+* Near-to-far field transformation 
+* Connecting region method
+* Perfectly Matched Layer (PML) and Generalized PML
+
+### Various Transmit Waveforms, e.g.
+* Gaussian
+* Blackman-Harris
+* Sinc
+* Hanning
+
 ### Dielectric Cylinder
 <img src="figures/cylinder.png" width="100%">
 
@@ -25,11 +37,17 @@ grid sampling resolution approaching the limit of wavelength/2
 
 ### Active and Passive SAR Focusing of Radargram
 <img src="figures/focusing.png" width="100%">
+(a) scene of dielectric constant, (b) unfocused radargram, (c) focused radargram, (d) focused radargram after refraction correction
 
 ### Simple to Use for Radar Sounding Applications: 
-one MATLAB command given radar sounding (system and geometry) input parameters
+* one MATLAB command 
+* standard input parameters for radar sounder system and sounding geometry
+* outputs include far field waveforms and unfocused/focused radargram as user specified
 
-outputs include far field waveforms and unfocused/focused radargram as specified
+
+
+
+
 
 ## Instructions:
 
