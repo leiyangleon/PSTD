@@ -9,6 +9,18 @@ Copyright (C) 2019 California Institute of Technology.  Government Sponsorship A
 Citation: https://github.com/leiyangleon/PSTD
 
 
+## Features:
+
+<img src="figures/cylinder.png" width="100%">
+
+
+
+
+
+
+
+
+
 ## Instructions:
 
 * Copy the PSTD main directory under MATLAB search path
