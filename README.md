@@ -35,6 +35,8 @@ grid sampling resolution approaching the limit of wavelength/2
 <img src="figures/surface.png" width="50%">
 
 ### * Both Normal and Oblique Incidence of Arbitrary Wave Source
+* Plane wave source
+* Spherical wave source
 <img src="figures/oblique.png" width="100%">
 
 ### * Active and Passive SAR Focusing of Radargram
