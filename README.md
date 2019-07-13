@@ -11,10 +11,10 @@ Citation: https://github.com/leiyangleon/PSTD
 
 ## Features:
 
-### Memory Efficient and Accurate Compared to FDTD: 
+### * Memory Efficient and Accurate Compared to FDTD: 
 grid sampling resolution approaching the limit of wavelength/2
 
-### Standard FDTD/PSTD components included, e.g.
+### * Standard FDTD/PSTD components included, e.g.
 * Total Field/Scattered Field Formulation
 * Near-to-far field transformation 
 * Connecting region method
