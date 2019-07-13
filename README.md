@@ -1,6 +1,6 @@
 # Pseudo-Spectral Time-Domain (PSTD) Method for Simulation of Radar Echoes from Large Heterogeneous Domains
 
-This is a MATLAB-based two-dimensional (2D) PSTD full-wave simulator for solving large-scale (e.g. 10-1000 \lambda) low-frequency (e.g. HF) electromagnetic scattering problems with the application of radar sounding of planetary subsurfaces.
+This is a MATLAB-based two-dimensional (2D) PSTD full-wave simulator for solving large-scale (e.g. 10-1000 $\lambda$) low-frequency (e.g. HF) electromagnetic scattering problems with the application of radar sounding of planetary subsurfaces.
 
 Developed by Yang Lei, Darmindra Arumugam, Mark Haynes
 
