@@ -29,6 +29,8 @@ grid sampling resolution approaching the limit of wavelength/2
 ### Dielectric Cylinder
 <img src="figures/cylinder.png" width="100%">
 
+### Novel Simulation Domain Design for Half-space Electromagnetic Scattering Problems
+
 ### Random Dielectric Rough Surface/Random Dielectric Volume
 <img src="figures/surface.png" width="50%">
 
