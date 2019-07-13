@@ -20,28 +20,28 @@ grid sampling resolution approaching the limit of wavelength/2
 * Connecting region method
 * Perfectly Matched Layer (PML) and Generalized PML
 
-### Various Transmit Waveforms, e.g.
+### * Various Transmit Waveforms, e.g.
 * Gaussian
 * Blackman-Harris
 * Sinc
 * Hanning
 
-### Dielectric Cylinder
+### * Dielectric Cylinder
 <img src="figures/cylinder.png" width="100%">
 
-### Novel Simulation Domain Design for Half-space Electromagnetic Scattering Problems
+### * Novel Simulation Domain Design for Half-space Electromagnetic Scattering Problems
 
-### Random Dielectric Rough Surface/Random Dielectric Volume
+### * Random Dielectric Rough Surface/Random Dielectric Volume
 <img src="figures/surface.png" width="50%">
 
-### Both Normal and Oblique Incidence of Arbitrary Wave Source
+### * Both Normal and Oblique Incidence of Arbitrary Wave Source
 <img src="figures/oblique.png" width="100%">
 
-### Active and Passive SAR Focusing of Radargram
+### * Active and Passive SAR Focusing of Radargram
 <img src="figures/focusing.png" width="100%">
 (a) scene of dielectric constant, (b) unfocused radargram, (c) focused radargram, (d) focused radargram after refraction correction
 
-### Simple to Use for Radar Sounding Applications: 
+### * Simple to Use for Radar Sounding Applications: 
 * one MATLAB command 
 * standard input parameters for radar sounder system and sounding geometry
 * outputs include far field waveforms and unfocused/focused radargram as user specified
