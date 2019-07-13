@@ -1,5 +1,5 @@
 function [envelope,pha,fy1,fy2,peak,numt0r,numt0,deltat,delta]=PSTD(fcenter,cellsperwavelength,BW,sigType,time_tot,time_shift,x_dist,y_dist,source_height,surface_height,TFSF_type,PML_type,...
-    obs_x,obs_y,obs_x_r,obs_y_r,plane_wave,focus,ref_corr)
+    obs_x,obs_y,obs_x_r,obs_y_r,plane_wave,focus,ref_corr,nameflag)
 
 close all;
 
@@ -8,7 +8,7 @@ close all;
 %%%%%%%%% fcenter (in Hz): center frequency being simulated
 %%%%%%%%% cellsperwavelength: number of grid cells per wavelength at center frequency
 %%%%%%%%% BW (in Hz): transmitted bandwidth (for Gaussian pulse only)
-%%%%%%%%% sigType: flag of the transmitted signal type, i.e. 0 for Gaussian pulse, 1 for Blackman-Harris (BH) pulse, and 2 for sinc pulse
+%%%%%%%%% sigType: flag of the transmitted signal type, i.e. 0 for Gaussian pulse, 1 for Blackman-Harris (BH) pulse, 2 for sinc pulse, and 3 for Hanning pulse
 %%%%%%%%% time_tot (in s): the total time period being simulated, roughly given by 2*time_shift + (source2interface)/c + (interface2surface)/c
 %%%%%%%%% time_shift (in s): single-sided pulse width under 3-sigma rule, roughly given by round(0.966/BW/2*3/deltat) for Gaussian pulse
 %%%%%%%%% x_dist (in m): horizontal dimension of the domain
@@ -96,11 +96,13 @@ if TFSF_type==0
     Hx_data_R = zeros(time_tot,length(surface_height_R));
     Hx_data_B = zeros(time_tot,length(surface_location_B));
 elseif TFSF_type==1
-    surface_location=1:xdim;
+%     surface_location=1:xdim;
+    surface_location=bound_width_x+1:xdim-bound_width_x;
     Ez_data = zeros(time_tot,length(surface_location));
     Hx_data = zeros(time_tot,length(surface_location));
 elseif TFSF_type==2
-    surface_location=1:xdim;
+%     surface_location=1:xdim;
+    surface_location=bound_width_x+1+round(000/delta):xdim-bound_width_x-round(000/delta);
     Ez_data = zeros(time_tot,length(surface_location));
     Hx_data = zeros(time_tot,length(surface_location));
 else
@@ -169,6 +171,8 @@ elseif (TFSF_type==1)&&(plane_wave==1)&&(PML_type==0)&&(focus==0)&&(obs_x==0)   
 elseif (TFSF_type==2)&&(PML_type==1)&&(focus==0)&&(length(obs_x)==1)            %%%%%%%%% Oblique-incidence arbitrary wave distributed target
     if sigType==0
         TFSF_surface_CR_GPML;
+    elseif sigType==3
+        TFSF_HA_surface_CR_GPML;
     else
         error('Waveform NOT defined!!!')
     end
@@ -200,5 +204,7 @@ else
 end
 
 %%
+
+save(['DATASET_' nameflag])
 
 toc
