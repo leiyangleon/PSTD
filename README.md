@@ -2,9 +2,12 @@
 
 This is a MATLAB-based two-dimensional (2D) PSTD full-wave simulator for solving large-scale (e.g. 10-1000 \lambda) low-frequency (e.g. HF) electromagnetic scattering problems with the application of radar sounding of planetary subsurfaces.
 
-Copyright (C) 2019 Yang Lei, Darmindra Arumugam, Mark Haynes
+Developed by Yang Lei, Darmindra Arumugam, Mark Haynes
 
-California Institute of Technology
+Copyright (C) 2019 California Institute of Technology.  Government Sponsorship Acknowledged.
+
+Citation: https://github.com/leiyangleon/PSTD
+
 
 ## Instructions:
 
