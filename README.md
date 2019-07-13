@@ -18,7 +18,7 @@ grid sampling resolution approaching the limit of wavelength/2
 <img src="figures/cylinder.png" width="100%">
 
 ### Random Dielectric Rough Surface/Random Dielectric Volume
-<img src="figures/surface.png" width="100%">
+<img src="figures/surface.png" width="50%">
 
 ### Both Normal and Oblique Incidence of Arbitrary Wave Source
 <img src="figures/oblique.png" width="100%">
@@ -27,7 +27,8 @@ grid sampling resolution approaching the limit of wavelength/2
 <img src="figures/focusing.png" width="100%">
 
 ### Simple to Use for Radar Sounding Applications: 
-one MATLAB command given radar sounding (system and geometry) input parameters;
+one MATLAB command given radar sounding (system and geometry) input parameters
+
 outputs include far field waveforms and unfocused/focused radargram as specified
 
 ## Instructions:
