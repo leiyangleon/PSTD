@@ -11,8 +11,8 @@ Citation: https://github.com/leiyangleon/PSTD
 
 ## Features:
 
-### * Memory Efficient and Accurate Compared to FDTD: 
-grid sampling resolution approaching the limit of maximum wavelength being simulated divided by 2
+### * Memory Efficient and Accurate Compared to FDTD
+The grid sampling resolution approaches the limit of minimum wavelength being simulated divided by 2.
 
 ### * Standard FDTD/PSTD components included, e.g.
 * Total Field/Scattered Field Formulation
