@@ -35,7 +35,7 @@ The grid sampling resolution approaches the limit of minimum wavelength being si
 ### * Novel Simulation Domain Design for Half-space Electromagnetic Scattering Problems
 
 ### * Random Dielectric Rough Surface/Random Dielectric Volume
-<img src="figures/surface.png" width="50%">
+<img src="figures/surface.png" width="100%">
 
 ### * Both Normal and Oblique Incidence of Arbitrary Wave Source
 * Plane wave source
