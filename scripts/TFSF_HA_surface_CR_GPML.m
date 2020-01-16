@@ -312,12 +312,12 @@ end
 % fig = figure;
 % movie(fig,F,1)
 % 
-% F=F(1:10:end);
-% 
-% myVideo = VideoWriter(nameflag,'MPEG-4');
-% open(myVideo);
-% % writeVideo(myVideo, F);
+F=F(1:10:end);
+
+myVideo = VideoWriter(nameflag,'MPEG-4');
+open(myVideo);
 % writeVideo(myVideo, F);
-% close(myVideo);
+writeVideo(myVideo, F);
+close(myVideo);
 
 % load(['./1km_N2F/DATASET_' nameflag])
