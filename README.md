@@ -33,6 +33,7 @@ The grid sampling resolution approaches the limit of minimum wavelength being si
 <img src="figures/cylinder.png" width="100%">
 
 ### * Novel Simulation Domain Design for Half-space Electromagnetic Scattering Problems
+<img src="figures/domain.png" width="100%">
 
 ### * Random Dielectric Rough Surface/Random Dielectric Volume
 <img src="figures/surface.png" width="100%">
