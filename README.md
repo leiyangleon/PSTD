@@ -39,10 +39,8 @@ The grid sampling resolution approaches the limit of minimum wavelength being si
 <img src="figures/surface.png" width="100%">
 
 ### * Both Normal and Oblique Incidence of Arbitrary Wave Source
-* Plane wave source
-<img src="figures/oblique.png" width="100%">
-* Spherical wave source
-<img src="figures/spherical.png" width="100%">
+* Plane wave source <img src="figures/oblique.png" width="100%">
+* Spherical wave source <img src="figures/spherical.png" width="100%">
 
 
 ### * Along-track Active and Passive SAR Focusing of Radargram
