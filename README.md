@@ -9,7 +9,10 @@ Developed by Yang Lei (GPS/Caltech, ylei@caltech.edu), Darmindra Arumugam (JPL/C
 
 Copyright (C) 2019 California Institute of Technology.  Government Sponsorship Acknowledged.
 
-Citation: https://github.com/leiyangleon/PSTD
+Reference: Y. Lei, M. S. Haynes, D. Arumugam and C. Elachi, "A 2-D Pseudospectral Time-Domain (PSTD) Simulator for Large-Scale Electromagnetic Scattering and Radar Sounding Applications," in IEEE Transactions on Geoscience and Remote Sensing.
+doi: 10.1109/TGRS.2019.2960751
+keywords: {Electromagnetic (EM) scattering;focusing;pseudospectral time domain (PSTD);radar;sounding;synthetic aperture radar (SAR).},
+URL: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8957426&isnumber=4358825
 
 
 ## Features:
