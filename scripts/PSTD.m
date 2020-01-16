@@ -1,5 +1,5 @@
 function [envelope,pha,fy1,fy2,peak,numt0r,numt0,deltat,delta]=PSTD(fcenter,cellsperwavelength,BW,sigType,time_tot,time_shift,x_dist,y_dist,source_height,surface_height,TFSF_type,PML_type,...
-    obs_x,obs_y,obs_x_r,obs_y_r,plane_wave,focus,ref_corr,nameflag)
+    obs_x,obs_y,obs_x_r,obs_y_r,plane_wave,focus,ref_corr,nameflag,large_flag)
 
 close all;
 
@@ -8,7 +8,7 @@ close all;
 %%%%%%%%% fcenter (in Hz): center frequency being simulated
 %%%%%%%%% cellsperwavelength: number of grid cells per wavelength at center frequency
 %%%%%%%%% BW (in Hz): transmitted bandwidth (for Gaussian pulse only)
-%%%%%%%%% sigType: flag of the transmitted signal type, i.e. 0 for Gaussian pulse, 1 for Blackman-Harris (BH) pulse, 2 for sinc pulse, and 3 for Hanning pulse
+%%%%%%%%% sigType: flag of the transmitted signal type, i.e. 0 for Gaussian pulse, 1 for Blackman-Harris (BH) pulse, and 2 for sinc pulse
 %%%%%%%%% time_tot (in s): the total time period being simulated, roughly given by 2*time_shift + (source2interface)/c + (interface2surface)/c
 %%%%%%%%% time_shift (in s): single-sided pulse width under 3-sigma rule, roughly given by round(0.966/BW/2*3/deltat) for Gaussian pulse
 %%%%%%%%% x_dist (in m): horizontal dimension of the domain
@@ -24,6 +24,7 @@ close all;
 %%%%%%%%% plane_wave: flag identifying plane-wave source, i.e. 0 not plane wave, 1 plane wave
 %%%%%%%%% focus: flag performing focusing, i.e. 0 no focusing, non-zero value focusing with the value representing azimuth resolution in meters, '-' means default azimuth resolution equals to range resolution. When "obs_x_r" and "obs_y_r" are vectors, any non-zero value (or '-') of "focus" will apply focusing on the user-specified receiver locations.
 %%%%%%%%% ref_corr: flag of refraction correction in the focused radargram, i.e. 0 no correction, non-zero-value vector "[a,b]" means correction with "a" representing the surface elevation in meters, "b" representing the dielectric constant of volume under surface
+%%%%%%%%% large_flag: flag for large-domain Near2Far field transformation, i.e. 0 off, 1 on
 
 %%                   OUTPUT                   
 
@@ -66,7 +67,7 @@ simspace_waveforms;
 
 %%  Plot waveforms and spectral characteristics
 
-waveform_characteristics;
+% waveform_characteristics;
 
 %%  Define simulation canvas
 
@@ -178,7 +179,11 @@ elseif (TFSF_type==2)&&(PML_type==1)&&(focus==0)&&(length(obs_x)==1)            
     end
     if length(obs_y_r)==1
         obs_y_r_sub=obs_y_r;obs_x_r_sub=obs_x_r;
-        N2F_TFSF_surface;
+        if large_flag==1
+            N2F_TFSF_surface_large;
+        else
+            N2F_TFSF_surface;
+        end
     else
         vectorized_receivers_surface;
     end
