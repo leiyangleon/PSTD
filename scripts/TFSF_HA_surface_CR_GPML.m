@@ -305,20 +305,19 @@ for n= 1:time_tot
     set(h,'cdata',20*log10(abs(real(Ezt)))); %getframe(f1);
     title(['time: ' num2str(((n)+numt0)*deltat*1e6) ' \mus'],'FontSize',20)
     F(n) = getframe(gcf);
-%     display([num2str(n) '/' num2str(time_tot)])
-%     toc
+%     display([num2str(n) '/' num2str(time_tot)]);
 
 end
 
 % fig = figure;
 % movie(fig,F,1)
-
-F=F(1:10:end);
-
-myVideo = VideoWriter(nameflag,'MPEG-4');
-open(myVideo);
+% 
+% F=F(1:10:end);
+% 
+% myVideo = VideoWriter(nameflag,'MPEG-4');
+% open(myVideo);
+% % writeVideo(myVideo, F);
 % writeVideo(myVideo, F);
-writeVideo(myVideo, F);
-close(myVideo);
+% close(myVideo);
 
 % load(['./1km_N2F/DATASET_' nameflag])
