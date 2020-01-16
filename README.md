@@ -40,12 +40,18 @@ The grid sampling resolution approaches the limit of minimum wavelength being si
 
 ### * Both Normal and Oblique Incidence of Arbitrary Wave Source
 * Plane wave source
-* Spherical wave source
 <img src="figures/oblique.png" width="100%">
+* Spherical wave source
+<img src="figures/spherical.png" width="100%">
 
-### * Active and Passive SAR Focusing of Radargram
+
+### * Along-track Active and Passive SAR Focusing of Radargram
 <img src="figures/focusing.png" width="100%">
 (a) scene of dielectric constant, (b) unfocused radargram, (c) focused radargram, (d) focused radargram after refraction correction
+
+### * Cross-track Clutter and Subsurface in SAR-focused Radargram
+<img src="figures/sounding.png" width="100%">
+
 
 ### * Simple to Use for Radar Sounding Applications: 
 * one MATLAB command 
