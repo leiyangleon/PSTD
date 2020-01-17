@@ -2,7 +2,7 @@
 
 [![Language](https://img.shields.io/badge/MATLAB-blue.svg)](https://www.mathworks.com/products/matlab.html)
 ![Latest version](https://img.shields.io/badge/latest%20version-v1.0-yellowgreen.svg)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/leiyangleon/autoRIFT/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/leiyangleon/PSTD/blob/master/LICENSE)
 [![Citation](https://img.shields.io/badge/DOI-10.1109/TGRS.2019.2960751-blue)](https://ieeexplore.ieee.org/document/8957426)
 
 This is a MATLAB-based two-dimensional (2D) PSTD full-wave simulator for solving large-scale (e.g. 10-1000 wavelength) low-frequency (e.g. HF) electromagnetic scattering problems with the application of radar sounding of planetary subsurfaces.
